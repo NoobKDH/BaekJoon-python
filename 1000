@@ -1,2 +1,3 @@
 a,b = map(int, input().split())
 print(a+b)
+// input()의 경우 한 줄 입력을 받음
