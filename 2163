@@ -1,0 +1,6 @@
+N, M = map(int, input().split())
+chco = N*M
+if chco == 1:
+    print(0)
+else:
+    print(chco-1)
