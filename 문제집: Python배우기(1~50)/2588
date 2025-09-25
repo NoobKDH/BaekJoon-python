@@ -1,0 +1,7 @@
+a = int(input())
+b = list(map(int,input()))
+for i in b[::-1]:
+    re = a*int(i)
+    print(re)
+c = ''.join(map(str,b))
+print(a*int(c))
