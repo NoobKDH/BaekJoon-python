@@ -1,0 +1,18 @@
+H, M, S = map(int, input().split()) // H = 시, M = 분, S = 초
+use_time = int(input()) // use_time = 사용 시간
+
+reH = H //reH = 출력 시
+reM = M //reM = 출력 분
+reS = S+use_time //reS = 출력 초
+
+
+while reS >= 60:
+    reM += 1
+    reS -= 60
+    while reM >= 60:
+        reH += 1
+        reM -= 60
+        if reH == 24:
+            reH=0
+
+print(reH, reM, reS)
