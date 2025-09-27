@@ -1,0 +1,4 @@
+song, mean = map(int, input().split())
+mean -= 1
+melody = song*mean
+print(melody+1)
