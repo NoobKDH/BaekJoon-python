@@ -1,0 +1,7 @@
+H1, H2, H3 = map(int, input().split())
+N = int(input())
+
+mb = H1 + H2 + H3
+result = ((N + 1) // 2) * mb + (N // 2) * (-H1 + H3)
+
+print(result)
