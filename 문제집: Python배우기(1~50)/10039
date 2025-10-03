@@ -1,0 +1,8 @@
+mean = 0
+for i in range(1,6):
+    a = int(input())
+    if a<40:
+        mean +=40
+    else:
+        mean +=a
+print(mean//5)
