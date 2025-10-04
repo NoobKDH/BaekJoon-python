@@ -1,0 +1,11 @@
+o,t,th = map(int,input().split())
+if o ==t==th:
+   print(10000+o*1000)
+elif o==t!=th:
+    print(1000+o*100)
+elif o==th!=t:
+    print(1000+o*100)
+elif t==th!=o:
+    print(1000+t*100)
+else: 
+    print(max(o, t, th) * 100)
