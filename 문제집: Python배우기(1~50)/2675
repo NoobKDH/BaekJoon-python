@@ -1,0 +1,7 @@
+T = int(input())    # 테스트 케이스 개수
+for i in range(T):  # 테스트 케이스 만큼 반복
+    r,s = input().split()   # 반복 횟수, 문자열 입력
+    r = int(r)  #int로 변환
+    for i in range(len(s)): #문자열 길이만큼 반복
+        print(s[i]*r, end="")   #문자열 하나하나 반복 횟수만큼 출력
+    print()
