@@ -1,0 +1,18 @@
+score = ['A','B','C','D','F']
+score.sort(reverse=True)
+input_score = list(input())
+
+for i in score:
+    if input_score[0] == 'F':
+        print(0.0)
+        break
+    elif input_score[0] == i:
+        if input_score[1] == '+':
+            print(score.index(i)+0.3)
+            break
+        elif input_score[1] == '-':
+            print(score.index(i)-0.3)
+            break
+        else:
+            print(float(score.index(i)))
+            break
