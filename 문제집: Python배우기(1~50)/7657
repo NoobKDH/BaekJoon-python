@@ -1,0 +1,14 @@
+dish = list(input())    # 그릇 방향과 개수 입력
+h=10    # 높이 처음은 무조건 10
+for i in range(1,len(dish)):# 1부터 dish 길이만큼 반복
+    if dish[i]=='(':        # 그릇이 "(" 경우
+        if dish[i-1]=='(':  # 전 그릇의 방향이 같은 경우
+            h+=5
+        elif dish[i-1]==')':# 전 그릇의 방향이 다른 경우
+            h+=10
+    elif dish[i]==')':      # 그릇이 ")" 경우
+        if dish[i-1]=='(':  # 전 그릇의 방향이 다른 경우
+            h+=10
+        elif dish[i-1]==')':# 전 그릇의 방향이 같은 경우
+            h+=5
+print(h)
