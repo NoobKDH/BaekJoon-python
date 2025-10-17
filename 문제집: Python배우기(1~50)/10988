@@ -1,0 +1,5 @@
+word = list(input())    # 단어 입력
+if word == word[::-1]:  # 단어가 역순으로 바꿨을 때 같은지 확인
+    print(1)
+else:
+    print(0)
