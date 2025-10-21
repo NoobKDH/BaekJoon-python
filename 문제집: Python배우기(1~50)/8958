@@ -1,0 +1,13 @@
+T = int(input())
+score=0
+for i in range(T):
+    result=0
+    quiz = list(input())
+    for j in quiz:
+        if j=="O":
+            score +=1
+            result +=score
+        else:
+            score = 0
+    score =0
+    print(result)
