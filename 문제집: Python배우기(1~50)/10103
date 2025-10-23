@@ -1,0 +1,10 @@
+n = int(input())    # 라운드 수
+chang_score=sang_score=100  # 창영,상덕 점수
+for i in range(n):  # 라운드 수 만큼 반복
+    chang, sang = map(int,input().split()) # 창영이의 (주사위)숫자, 상덕이의 (주사위)숫자
+    if chang > sang:    # 창영이가 큰 경우
+        sang_score-=chang
+    elif chang<sang:    # 상덕이가 큰 경우
+        chang_score-=sang
+print(chang_score)  # 창영이 점수 출력
+print(sang_score)   # 상덕이 점수 출력
