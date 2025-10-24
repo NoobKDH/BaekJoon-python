@@ -1,0 +1,15 @@
+T = int(input())
+
+for i in range(T):
+    kor = 0
+    yon = 0
+    for j in range(9):
+        y, k = map(int, input().split())
+        yon+=y
+        kor+=k
+    if yon > kor:
+        print("Yonsei")
+    elif yon < kor:
+        print("Korea")
+    elif yon == kor:
+        print("Draw")
